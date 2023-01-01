@@ -1,17 +1,12 @@
-# City-Service API with Spring Boot, H2, and JPA
+# user-service API with Spring Boot
 
-#### Prerequisite 
-
-Installed:   
-[Docker](https://www.docker.com/)   
-[git](https://www.digitalocean.com/community/tutorials/how-to-contribute-to-open-source-getting-started-with-git)  
 
 ## Steps to Setup
 
 **1. Clone the application**
 
 ```
-$  git clone  https://github.com/atanu2110/city-service.git
+$  git clone  https://github.com/atanu2110/user-service.git
 ```
 
 **2. Build project using Maven**
@@ -23,17 +18,17 @@ $ mvn clean install -DskipTests
 **3. Build docker image**
 
 ```
-docker build -t city-service .
+docker build -t user-service .
 ```
 
 **4. Run docker image**
 
 ```
-docker run -p 8085:8085 city-service
+docker run -p 8087:8087 user-service
 ```
 
-The app will start running at <http://localhost:8085>
+The app will start running at <http://localhost:8087>
 
 ## Api Documentation (Swagger)
 
-<http://localhost:8085/swagger-ui/#/>
+<http://localhost:8086/swagger-ui/#/>
